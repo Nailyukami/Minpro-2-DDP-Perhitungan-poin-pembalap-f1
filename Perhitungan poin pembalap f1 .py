@@ -2,9 +2,6 @@ import math
 import pwinput
 
 
-
-
-
 daftar_pembalap = {
     1: {"nama": "George Russell", "tim": "Mercedes"},
     2: {"nama": "Max Verstappen", "tim": "Red Bull Racing"},
@@ -21,19 +18,17 @@ daftar_pembalap = {
 
 poin_posisi = {1: 25, 2: 18, 3: 15, 4: 12, 5: 10, 6: 8, 7: 6, 8: 4, 9: 2, 10: 1}
 
-# Dictionary akun: username -> password dan role
+
 akun = {
     "admin": {"password": "admin123", "role": "admin"},
     "nailyukami": {"password": "user456", "role": "user"}
 }
 
-# List berisi dictionary hasil balapan
+
 data_balapan = []
 
 
-# ------------------------------------------------------------
-# FUNGSI VALIDASI INPUT
-# ------------------------------------------------------------
+
 def input_angka(pesan, minimal, maksimal):
     while True:
         teks = input(pesan)
@@ -199,9 +194,6 @@ def hapus_hasil():
         print("Pilihan tidak valid, penghapusan dibatalkan.")
 
 
-# ------------------------------------------------------------
-# FUNGSI LOGIN & REGISTRASI
-# ------------------------------------------------------------
 def login():
     print("\nLOGIN")
     percobaan = 0
@@ -231,9 +223,7 @@ def registrasi():
     print("Registrasi berhasil! Silakan login.")
 
 
-# ------------------------------------------------------------
-# MENU PER ROLE
-# ------------------------------------------------------------
+
 def menu_admin():
     aktif = True
     while aktif:
